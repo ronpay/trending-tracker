@@ -85,15 +85,20 @@ already active, `trending-tracker` on PATH works as written.
 
    ```bash
    trending-tracker link && trending-tracker trends && trending-tracker build
-   git add data && git commit -m "data: update arXiv trends $(date -u +%F)" && git push
+   git add data &&
+     git commit --author="Codex <noreply@openai.com>" \
+       -m "📈 data: update arXiv trends $(date -u +%F)" &&
+     git push
    ```
 
    `trends` warns about days that carry far fewer papers than their weekday usually does,
    and says which fix each one needs: re-fetch a day that came up short, group a day that is
    only waiting on you. Either way, do not leave it to score as a real dip. `site/` and
    `data/cache/` are gitignored — commit `data/papers`, `data/topics`, `data/index`, and
-   `data/trends` only. Pushing is what publishes: CI rebuilds and deploys the site from the
-   committed data.
+   `data/trends` only. The commit is authored as `Codex <noreply@openai.com>` — the grouping
+   inside it is yours, not the machine owner's — while the committer stays whoever ran the
+   update. Pushing is what publishes: CI rebuilds and deploys the site from the committed
+   data.
 
 ## Grouping rules
 
