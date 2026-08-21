@@ -4136,7 +4136,7 @@
       ],
       "summary": "Operational diagnosis combines lightweight transformers, physics-informed inverse models, transfer learning, reliability benchmarks, and hybrid temporal detectors. Applications include turbines, bearings, power protection, renewable grids, and intrusion monitoring under limited or shifted data.",
       "summary_pasted": false,
-      "topic_id": "anomaly-detection-on-structured--ec8b3cb"
+      "topic_id": "fault-detection-and-cyber-physic-025ed95"
     },
     {
       "centroid": {

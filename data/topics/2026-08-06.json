@@ -3335,7 +3335,7 @@
       ],
       "summary": "Anomaly and maintenance studies model rare failures in machines, networks, and industrial assets using residuals, robust features, and multimodal evidence. Validation stresses early warning, cross-condition transfer, and false-alarm cost.",
       "summary_pasted": false,
-      "topic_id": "anomaly-detection-on-structured--ec8b3cb"
+      "topic_id": "fault-detection-and-cyber-physic-025ed95"
     },
     {
       "centroid": {

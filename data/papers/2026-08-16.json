@@ -15,7 +15,7 @@
     "eess.IV"
   ],
   "date": "2026-08-16",
-  "fetched_at": "2026-08-19T21:40:35+08:00",
+  "fetched_at": "2026-08-21T01:49:13-06:00",
   "papers": [
     {
       "abstract": "Large language models process large amounts of information but usually lack an explicit mechanism for maintaining compact and evolving conceptual representations. We introduce Mental Model Management (3M), a framework in which knowledge is represented as mental models consisting of compact chunks. Rather than accumulating text passages, 3M continuously integrates new information into an existing conceptual representation. A set of operators extracts knowledge, retrieves relevant models, adds and updates chunks, reorganizes representations, detects inconsistencies, and derives new knowledge. We describe the main 3M operators and illustrate each operation using Evolution Strategies as a running example.",
@@ -901,11 +901,11 @@
         "cs.AI"
       ],
       "id": "2608.15565",
-      "pdf_url": "https://arxiv.org/pdf/2608.15565v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.15565v3",
       "primary_category": "cs.AI",
       "published": "2026-08-16T06:18:54Z",
       "title": "Admission Without Answers: Label-Free Certification and Experience Learning for LLM-Based Optimization Modeling",
-      "updated": "2026-08-18T16:25:09Z",
+      "updated": "2026-08-19T05:13:37Z",
       "url": "https://arxiv.org/abs/2608.15565"
     },
     {
@@ -1292,6 +1292,7 @@
       "categories": [
         "cs.CR",
         "cs.LG",
+        "quant-ph",
         "stat.ML"
       ],
       "id": "2608.15617",
@@ -1471,7 +1472,7 @@
       "authors": [
         "Wenhao Yuan",
         "Chenchen Lin",
-        "Wenhao Hu",
+        "Wentao Hu",
         "Jian Chen",
         "Jinfeng Xu",
         "Shujie Li",
@@ -1483,11 +1484,11 @@
         "cs.LG"
       ],
       "id": "2608.15639",
-      "pdf_url": "https://arxiv.org/pdf/2608.15639v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15639v2",
       "primary_category": "cs.DC",
       "published": "2026-08-16T09:06:28Z",
       "title": "When Is Shallow Enough? Adaptive Split Federated Learning with Client-Specific Sufficiency Estimation",
-      "updated": "2026-08-16T09:06:28Z",
+      "updated": "2026-08-20T05:39:47Z",
       "url": "https://arxiv.org/abs/2608.15639"
     },
     {
@@ -1688,11 +1689,11 @@
         "cs.GR"
       ],
       "id": "2608.15659",
-      "pdf_url": "https://arxiv.org/pdf/2608.15659v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15659v2",
       "primary_category": "cs.CV",
       "published": "2026-08-16T10:06:59Z",
       "title": "WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations",
-      "updated": "2026-08-16T10:06:59Z",
+      "updated": "2026-08-19T05:36:59Z",
       "url": "https://arxiv.org/abs/2608.15659"
     },
     {
@@ -3947,11 +3948,11 @@
         "cs.RO"
       ],
       "id": "2608.15897",
-      "pdf_url": "https://arxiv.org/pdf/2608.15897v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15897v2",
       "primary_category": "cs.RO",
       "published": "2026-08-16T19:09:55Z",
       "title": "Tactile Sim2Real without Tactile Simulation via Bottlenecked Latent Reconstruction",
-      "updated": "2026-08-16T19:09:55Z",
+      "updated": "2026-08-19T00:46:03Z",
       "url": "https://arxiv.org/abs/2608.15897"
     },
     {
@@ -4015,11 +4016,11 @@
         "cs.MM"
       ],
       "id": "2608.15905",
-      "pdf_url": "https://arxiv.org/pdf/2608.15905v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15905v2",
       "primary_category": "cs.CV",
       "published": "2026-08-16T19:44:49Z",
       "title": "CLARA: Clip-Level Multimodal Alignment with VLM-Derived Rationales for Hateful Video Detection",
-      "updated": "2026-08-16T19:44:49Z",
+      "updated": "2026-08-19T13:14:48Z",
       "url": "https://arxiv.org/abs/2608.15905"
     },
     {
@@ -4355,11 +4356,11 @@
         "cs.RO"
       ],
       "id": "2608.15938",
-      "pdf_url": "https://arxiv.org/pdf/2608.15938v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15938v2",
       "primary_category": "cs.RO",
       "published": "2026-08-16T21:49:07Z",
       "title": "Revisiting Open-Loop Execution in Robotics: Toward Reactive, Higher-Performing Policies",
-      "updated": "2026-08-16T21:49:07Z",
+      "updated": "2026-08-19T16:19:18Z",
       "url": "https://arxiv.org/abs/2608.15938"
     },
     {
@@ -4424,8 +4425,8 @@
       "abstract": "Recent advances in large language models (LLMs) have enabled their use as conversational recommender systems (CRS), demonstrating strong recommendation accuracy and natural dialogue. However, guiding multi-turn interactions to elicit user preferences effectively remains challenging. Existing approaches either use separate reinforcement learning agents with templated interactions or optimize for interactivity judged by another LLM, without measuring how much useful information is actually gained. We propose a new approach that quantifies the effectiveness of each interaction by the reduction in the assistant's uncertainty, measured via entropy over recommendations. We apply this entropy reduction as a reward---without relying on ground-truth recommendations, which are often unavailable in real-world scenarios---to fine-tune the LLM, enabling strategic interaction generation. Empirical results with supervised fine-tuning (SFT) and direct preference optimization (DPO) on the INSPIRED and ReDial datasets show that our method improves both recommendation quality and conversational efficiency.",
       "authors": [
         "Cedar Site Bai",
-        "Duanshun Li",
         "Zhenyu Liao",
+        "Duanshun Li",
         "Sheikh Sarwar",
         "Huiyuan Chen",
         "Yuan Chen",
@@ -4440,11 +4441,11 @@
         "cs.LG"
       ],
       "id": "2608.15949",
-      "pdf_url": "https://arxiv.org/pdf/2608.15949v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15949v2",
       "primary_category": "cs.IR",
       "published": "2026-08-16T22:14:12Z",
       "title": "Ask to Be Sure: Informative Interactions for Confident Multi-Turn LLM Recommendation",
-      "updated": "2026-08-16T22:14:12Z",
+      "updated": "2026-08-20T01:49:38Z",
       "url": "https://arxiv.org/abs/2608.15949"
     },
     {
@@ -4779,6 +4780,81 @@
       "title": "MagViT: Interpretable Multi-Magnification Transformers with Patient-Level Model Selection for Breast Histopathology",
       "updated": "2026-08-16T18:20:40Z",
       "url": "https://arxiv.org/abs/2608.16959"
+    },
+    {
+      "abstract": "Knowledge graphs modeled in RDF are powerful for describing static knowledge, but they cannot capture or reason about the dynamic behavior of physical systems, e.g., systems described by differential equations, which is a critical gap for AI-driven cyber-physical systems. To solve this, we propose RDFdL, a framework that integrates RDF with Differential Dynamic Logic (dL) to represent and reason about both static knowledge and the continuous dynamics of physical systems. For the dynamic part, we syntactically represent differential equations and ranges in the state space in RDF and SHACL and provide semantics using a translation to dL. Linking RDF and dL through their shared foundation in first-order logic achieves a unique integration: verification results for safety and reachability properties in the dynamic logic domain become available as entailment to SPARQL queries over RDF data. We implement the pipeline using Apache Jena for ontology-driven RDF reasoning and KeYmaera X, the theorem prover for dL, and sketch its applicability in manufacturing.",
+      "authors": [
+        "Yuyang Li",
+        "Lukas Kubelka",
+        "Julia Butte",
+        "Tobias Käfer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.FL",
+        "cs.LO"
+      ],
+      "id": "2608.18165",
+      "pdf_url": "https://arxiv.org/pdf/2608.18165v1",
+      "primary_category": "cs.AI",
+      "published": "2026-08-16T02:04:26Z",
+      "title": "RDFdL: Integrating RDF with Differential Dynamic Logic",
+      "updated": "2026-08-16T02:04:26Z",
+      "url": "https://arxiv.org/abs/2608.18165"
+    },
+    {
+      "abstract": "Vision language models have transformed 2D medical imaging, yet extending them to 3D white matter tractography remains challenging due to the complex topology of fiber bundles. We introduce TractoGraphVLM, a unified framework for four tasks, bundle classification, text-to-tract retrieval, anatomical captioning, and visual question answering, built on a shared GPS architecture, training procedure, and read-out design. Fiber bundles are represented as streamline graphs whose nodes encode 3D position and tangent orientation. A General, Powerful, Scalable (GPS) graph transformer produces bundle embeddings aligned with a frozen BiomedBERT text encoder via contrastive learning, while a BioGPT decoder with visual prefix tokens generates captions and answers. A single shared encoder and decoder is trained jointly across all four tasks and evaluated from one checkpoint. Trained on HCP Young Adult subjects, TractoGraphVLM achieves 91.8% bundle classification accuracy, 84.7% retrieval R@1, BLEU-4=20.1, ROUGE-L=66.8, and 66.4% VQA accuracy on a held-out test set. The same checkpoints transfer zero-shot to HCP Aging subjects, with a modest drop on discriminative tasks and a larger drop on generative tasks, showing robustness to age and acquisition shift. Language supervision yields richer representations than label-only training, recovering structure like hemisphere and fiber family, carried by captions but never given as a label. Swapping only the visual encoder, graphs preserving fiber orientation outperform volumetric baselines, with GPS giving the best balance. Generative metrics measure consistency with a structured knowledge base rather than independent clinical text; even so, TractoGraphVLM shows that classifying, retrieving, describing, and answering questions about a white matter bundle can be served by one jointly trained model that learns transferable neuroanatomy from language alone.",
+      "authors": [
+        "Gurucharan Marthi Krishna Kumar",
+        "Janine Dale Mendola",
+        "Amir Shmuel"
+      ],
+      "categories": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "id": "2608.18166",
+      "pdf_url": "https://arxiv.org/pdf/2608.18166v1",
+      "primary_category": "eess.IV",
+      "published": "2026-08-16T16:14:48Z",
+      "title": "TractoGraphVLM: A Unified Vision-Language Framework for White Matter Tractography",
+      "updated": "2026-08-16T16:14:48Z",
+      "url": "https://arxiv.org/abs/2608.18166"
+    },
+    {
+      "abstract": "Early multi-agent LLM systems often used role-separated teams, yet scaling agent count yields diminishing returns on repository-level coding tasks. Recent alternatives treat agents as passive tools (subagents), yet this removes the benefits of agent interaction entirely. We study whether a subagent paradigm can support a middle ground: minimal agentic cooperation without the overhead of large multi-agent teams. We introduce Adversarial Review (AR), a minimal cooperative code-review protocol in which a main coding agent works with a reviewer and a critic agent. The reviewer evaluates code, while the critic audits the review through structured disagreement before the main agent edits. On LiveCodeBench, AR achieves the highest pass rate among tested methods, outperforming a five-agent baseline while using only three agents. On SWE-PRBench, naive AR exposes a false-consensus failure mode, where agents converge on agreement without sufficient evidence, but a single prompt iteration that adds disagreement explicitly achieves the highest F1 among tested methods. On SWE-bench Verified, AR also shows improvements over the baselines on repository-level coding tasks. Together, AR demonstrates that cooperative code review does not require many agents or complex communication structures: it requires that disagreement be minimal, structured, and evidence-grounded.",
+      "authors": [
+        "Eric S. Qiu",
+        "Joyce Gill"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "id": "2608.18167",
+      "pdf_url": "https://arxiv.org/pdf/2608.18167v1",
+      "primary_category": "cs.AI",
+      "published": "2026-08-16T21:58:17Z",
+      "title": "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review",
+      "updated": "2026-08-16T21:58:17Z",
+      "url": "https://arxiv.org/abs/2608.18167"
+    },
+    {
+      "abstract": "Monitored quantum circuits exhibit a measurement-induced phase transition between volume-law and area-law entanglement as a function of the measurement rate $p$. Prior work places measurements at random locations and treats the rate as the control parameter. We instead fix the measurement budget and vary the placement process, comparing random placement against hand-designed and learned policies in brickwork random Clifford circuits at matched budget. First, placement geometry matters more than placement information. A deterministic contiguous sweep cuts the half-cut entropy by a factor of 3.4 relative to random placement, while equal-coverage unstructured placement and a greedy policy with full state access do far worse. The effect is carried by spatial order alone: measuring the $k$ least recently measured sites gives $4.14 \\pm 0.06$ bits with random tie-breaking and $1.29 \\pm 0.04$ bits with position-ordered tie-breaking. Second, the sweep eliminates the transition rather than shifting it. Tripartite mutual information crossings recede as $p^* \\propto 1/L$, the steady-state entropy saturates at an $L$-independent ceiling near $0.46/p$, and data for $64 \\le L \\le 512$ collapse onto the form $S = p^{-1} f(pL)$ predicted by a ballistic regrowth argument. Third, in stabilizer dynamics every outcome is deterministic or a fair coin flip, so the record's Shannon entropy is exactly countable; the sweep dominates the entropy-versus-record-cost frontier while paying the same roughly one bit per measurement as random placement. Policies trained by cross-entropy and proximal policy optimization do not find the sweep: score-based policies parameterize which sites to measure, not the order in which degenerate scores are resolved, and the effect lives in that order. The phase diagram of monitored dynamics is a property of the placement process, not only of the measurement rate.",
+      "authors": [
+        "Rohan Pandey"
+      ],
+      "categories": [
+        "cs.LG",
+        "quant-ph"
+      ],
+      "id": "2608.19248",
+      "pdf_url": "https://arxiv.org/pdf/2608.19248v1",
+      "primary_category": "quant-ph",
+      "published": "2026-08-16T04:08:30Z",
+      "title": "Demons on a Budget: Adaptive Measurement Placement at the Entanglement Phase Transition",
+      "updated": "2026-08-16T04:08:30Z",
+      "url": "https://arxiv.org/abs/2608.19248"
     }
   ]
 }

@@ -15,7 +15,7 @@
     "eess.IV"
   ],
   "date": "2026-08-17",
-  "fetched_at": "2026-08-19T21:40:35+08:00",
+  "fetched_at": "2026-08-21T01:49:13-06:00",
   "papers": [
     {
       "abstract": "Labeling large text corpora with LLM teachers has become a practical route to training data at scale. At millions of items, hand-labeling every batch is not feasible, and two questions dominate: what label quality a teacher buys per dollar, and how to keep a fleet of GPU workers busy under skewed, failure-prone workloads. We present a simple, reproducible pipeline that addresses both. First, a work-stealing ring pool: each worker owns a queue, drains it first, and then steals from ring successors, with exactly-once task claims via atomic conditional writes and crash tolerance via stale-claim sweeping. The claim protocol requires only a compare-and-set primitive from its storage layer; we implement it on a single SQLite file, which makes the reference implementation dependency-free and the experiments reproducible on one machine. Second, a memory-aware concurrency rule that sizes per-node parallelism by how many model copies fit on the GPU, so the same code runs safely across device sizes. Third, a relabeling benchmark methodology in which the teacher relabels a public dataset that already has gold labels, so quality reduces to an agreement measurement and cost follows from measured throughput. Under skewed load the pool sustains up to 3.4 times the throughput of static sharding while matching it at zero skew, loses 0 of 2,000 tasks when half the workers are killed mid-run (static sharding loses 953), and yields measured quality and cost points for an instruction-tuned teacher on irony and sentiment tasks. All experiments run on public data and commodity hardware; code, tests, and run logs are released.",
@@ -181,7 +181,8 @@
     {
       "abstract": "Reliable uncertainty quantification (UQ) is essential for deploying large language model (LLM) agents in complex interactive environments. Existing UQ methods largely rely on local signals, such as token probabilities, predictive entropy, or per-step confidence, and therefore overlook the long-range dependencies through which errors accumulate across an execution trajectory. As a result, they may fail to identify agent failures whose causes originate several reasoning or interaction steps before the final answer. We propose RUPA (Relational Uncertainty Propagation for Agents), a trajectory-level UQ framework for LLM agents. RUPA represents an execution history as a directed trajectory graph in which reasoning states, tool interactions, and environment feedback are nodes connected by temporal and semantic dependency edges. It then propagates uncertainty over this graph to capture how execution risk accumulates and transfers across interaction steps. The propagated signal is combined with trajectory-level behavioral features and goal-alignment information to produce a confidence estimate for the full agent trajectory. We evaluate RUPA on representative agent benchmarks, including $τ$-2, Terminal-Bench-2, and GAIA, using 6 open-source LLMs spanning multiple model families. Experimental results show that RUPA consistently outperforms existing UQ methods by providing more accurate uncertainty estimates, enabling earlier failure detection, and improving uncertainty-guided agent execution across diverse agent tasks. These results demonstrate that explicitly modeling relational dependency is crucial to reliable UQ for long-horizon LLM agents, providing a practical foundation for trustworthy agent execution.",
       "authors": [
-        "Zhengzhao Ma. Boxi Cao",
+        "Zhengzhao Ma",
+        "Boxi Cao",
         "Yaojie Lu",
         "Hongyu Lin",
         "Xianpei Han",
@@ -192,11 +193,11 @@
         "cs.CL"
       ],
       "id": "2608.16002",
-      "pdf_url": "https://arxiv.org/pdf/2608.16002v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16002v2",
       "primary_category": "cs.CL",
       "published": "2026-08-17T01:40:14Z",
       "title": "From Sequence to Structure: Relational Uncertainty Propagation for LLM Agents",
-      "updated": "2026-08-17T01:40:14Z",
+      "updated": "2026-08-19T01:59:37Z",
       "url": "https://arxiv.org/abs/2608.16002"
     },
     {
@@ -1530,11 +1531,11 @@
         "cs.RO"
       ],
       "id": "2608.16153",
-      "pdf_url": "https://arxiv.org/pdf/2608.16153v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16153v2",
       "primary_category": "cs.RO",
       "published": "2026-08-17T06:14:16Z",
       "title": "Unified Condition-Action Modeling for Accurate One-Step Action Generation",
-      "updated": "2026-08-17T06:14:16Z",
+      "updated": "2026-08-19T07:03:19Z",
       "url": "https://arxiv.org/abs/2608.16153"
     },
     {
@@ -2972,11 +2973,11 @@
         "cs.CV"
       ],
       "id": "2608.16289",
-      "pdf_url": "https://arxiv.org/pdf/2608.16289v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.16289v3",
       "primary_category": "cs.CV",
       "published": "2026-08-17T08:59:49Z",
       "title": "PosterText: Towards Unified Visual Text Generation and Editing for E-commerce Poster",
-      "updated": "2026-08-18T02:57:53Z",
+      "updated": "2026-08-20T10:14:14Z",
       "url": "https://arxiv.org/abs/2608.16289"
     },
     {
@@ -5201,11 +5202,11 @@
         "eess.SP"
       ],
       "id": "2608.16541",
-      "pdf_url": "https://arxiv.org/pdf/2608.16541v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16541v2",
       "primary_category": "eess.SP",
       "published": "2026-08-17T13:15:45Z",
       "title": "Automating Learner Assessment: Benchmarking Machine Learning and Deep Learning Models for EEG-Based Familiarity Prediction",
-      "updated": "2026-08-17T13:15:45Z",
+      "updated": "2026-08-20T13:12:52Z",
       "url": "https://arxiv.org/abs/2608.16541"
     },
     {
@@ -6090,11 +6091,11 @@
         "cs.MA"
       ],
       "id": "2608.16645",
-      "pdf_url": "https://arxiv.org/pdf/2608.16645v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16645v2",
       "primary_category": "cs.AI",
       "published": "2026-08-17T14:44:30Z",
       "title": "Reconstruction: A Blind Benchmark for Recovering Research Ideas from Pre-Publication Bibliographies",
-      "updated": "2026-08-17T14:44:30Z",
+      "updated": "2026-08-19T00:55:47Z",
       "url": "https://arxiv.org/abs/2608.16645"
     },
     {
@@ -6751,11 +6752,11 @@
         "eess.AS"
       ],
       "id": "2608.16722",
-      "pdf_url": "https://arxiv.org/pdf/2608.16722v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16722v2",
       "primary_category": "eess.AS",
       "published": "2026-08-17T15:38:08Z",
       "title": "Numerical and perceptual validity of synthetic Head-Related Transfer Functions at scale",
-      "updated": "2026-08-17T15:38:08Z",
+      "updated": "2026-08-19T12:38:19Z",
       "url": "https://arxiv.org/abs/2608.16722"
     },
     {
@@ -7091,11 +7092,11 @@
         "cs.AI"
       ],
       "id": "2608.16776",
-      "pdf_url": "https://arxiv.org/pdf/2608.16776v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16776v2",
       "primary_category": "cs.AI",
       "published": "2026-08-17T16:23:49Z",
       "title": "GRIP: Grounded Reasoning via Information-Restricted Premises",
-      "updated": "2026-08-17T16:23:49Z",
+      "updated": "2026-08-19T16:57:13Z",
       "url": "https://arxiv.org/abs/2608.16776"
     },
     {
@@ -7198,11 +7199,11 @@
         "cs.RO"
       ],
       "id": "2608.16794",
-      "pdf_url": "https://arxiv.org/pdf/2608.16794v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16794v2",
       "primary_category": "cs.RO",
       "published": "2026-08-17T16:50:59Z",
       "title": "Neurosymbolic Embodied Agents",
-      "updated": "2026-08-17T16:50:59Z",
+      "updated": "2026-08-18T20:46:57Z",
       "url": "https://arxiv.org/abs/2608.16794"
     },
     {
@@ -7344,7 +7345,7 @@
       "url": "https://arxiv.org/abs/2608.16805"
     },
     {
-      "abstract": "Large Language Models (LLMs) have demonstrated capabilities in in-context learning, task decomposition, step-by-step reasoning, and code generation, driving their gradual evolution from text generation models into the core of agents capable of perceiving environments, invoking tools, and executing tasks. Traditional LLM Agents typically obtain information through webpages, documents, databases, or external tools and generate corresponding invocation sequences according to user goals; when this technology is further integrated with robotic systems, large language models begin to undertake functions such as task understanding, high-level planning, and behavioral decision-making. SayCan combines the task reasoning capability of language models with the affordances of robotic skills, while Code as Policies and ProgPrompt generate robot task plans through policy code and programmatic prompting, respectively, and VoxPoser uses language models and vision-language models to construct three-dimensional value maps to guide robotic manipulation \\cite{6,7,8,9}. Vision-language-action models such as PaLM-E, RT-2, and GR00T N1 further strengthen the connection among language, visual perception, and robotic actions \\cite{10,11,12}. In such LLM-driven embodied agents, the model not only needs to understand user instructions, but also needs to combine scene states, object attributes, spatial relations, and execution feedback to complete task grounding, and then hand the generated action plan to skill libraries, motion planners, or controllers for execution.",
+      "abstract": "Large language model (LLM)-driven embodied agents rely on environment states to interpret scenes, generate high-level plans, and drive physical execution, making planner-visible state representations a critical security boundary. Existing attacks primarily manipulate user instructions, prompt contexts, model behavior, or perceptual inputs, while paying limited attention to whether environment-state text itself can serve as deceptive task evidence and propagate beyond planning to affect execution outcomes. Because embodied tasks are constrained by entity grounding, action preconditions, spatial relations, and environmental constraints, planning deviation alone does not guarantee adversarial execution. To address this gap, we investigate environment-state text as an independent attack surface and present the first closed-loop Environment State-Text Injection (ESTI) attack for LLM-driven embodied agents. Without modifying the original user instruction, model parameters, or executor, ESTI reformulates an adversarial objective as false state evidence compatible with the current environment and influences planning and execution through object properties, spatial relations, affordances, task-stage rules, and execution feedback. We further develop ESTI-Bench to evaluate attack propagation across the planning-to-execution closed loop and compare ESTI with Vanilla IPI, EIRAD, and BADROBOT across ProgPrompt/VirtualHome, VoxPoser/RLBench, and AI2-THOR/iTHOR. ESTI consistently outperforms existing baselines, improving planning-level and execution-level attack success rates by up to 89.32\\% and 43.69\\%, respectively. Further analysis shows that grounding, consistency, and executability jointly determine whether manipulated state evidence can propagate through the embodied closed loop and produce verifiable environmental changes.",
       "authors": [
         "Jiawei Liu",
         "Jiacheng Guo",
@@ -7362,11 +7363,11 @@
         "cs.RO"
       ],
       "id": "2608.16806",
-      "pdf_url": "https://arxiv.org/pdf/2608.16806v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16806v2",
       "primary_category": "cs.RO",
       "published": "2026-08-17T17:02:07Z",
-      "title": "When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents",
-      "updated": "2026-08-17T17:02:07Z",
+      "title": "Breaking Planner Integrity Boundary: Enviroment State-Text Injection Attack on LLM-Driven Embodied Agents",
+      "updated": "2026-08-18T16:31:28Z",
       "url": "https://arxiv.org/abs/2608.16806"
     },
     {
@@ -7695,11 +7696,11 @@
         "cs.RO"
       ],
       "id": "2608.16853",
-      "pdf_url": "https://arxiv.org/pdf/2608.16853v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16853v2",
       "primary_category": "cs.RO",
       "published": "2026-08-17T17:37:13Z",
       "title": "FlexWorm: Primitive-augmented Hybrid Contact-motion Planning for Suction-based Multi-segment Deformable Robots",
-      "updated": "2026-08-17T17:37:13Z",
+      "updated": "2026-08-20T16:06:41Z",
       "url": "https://arxiv.org/abs/2608.16853"
     },
     {
@@ -8597,7 +8598,7 @@
       "url": "https://arxiv.org/abs/2608.17033"
     },
     {
-      "abstract": "Post-training can unlock new capabilities and improve performance on specialized tasks, but sometimes at the cost of catastrophic forgetting in other domains. This poses a problem in long agent trajectories that compose different capabilities. We reject this tradeoff by giving an agent a tool to switch between specialized LoRA adapters mid-trace. To test its effectiveness, we compose two synthetic coding tasks that are logically simple but require specialization. We find that this allows the model to solve problems it previously could not, that the model is able to switch autonomously (and find a new strategy that beats our human heuristic baseline on one task), and that this incurs an up to an 18x reduction in capability tax compared to an agent using only one specialized adapter. Our approach also substantially outperforms spawning subagents in both task capabilities and token usage.",
+      "abstract": "Post-training can unlock new capabilities and improve performance on specialized tasks, but sometimes at the cost of catastrophic forgetting in other domains. This poses a problem in long agent trajectories that compose different capabilities. We reject this tradeoff by giving an agent a tool to switch between specialized LoRA adapters mid-trace. To test its effectiveness, we compose two synthetic coding tasks that are logically simple but require specialization. We find that this allows the model to solve problems it previously could not, that the model is able to switch autonomously (and find a new strategy that beats our human heuristic baseline on one task), and that this incurs an up to an 18x reduction in capability tax compared to an agent using only one specialized adapter. Our approach also substantially outperforms spawning subagents in both task capabilities (solving 4 of our hardest tasks versus none) and token usage (46.1x fewer tokens in some scenarios).",
       "authors": [
         "Kenneth Ge"
       ],
@@ -8605,11 +8606,11 @@
         "cs.LG"
       ],
       "id": "2608.17034",
-      "pdf_url": "https://arxiv.org/pdf/2608.17034v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17034v2",
       "primary_category": "cs.LG",
       "published": "2026-08-17T18:30:36Z",
       "title": "Agents unlock new capabilities through Switching LoRA Adapters as a Tool (SLAaaT)",
-      "updated": "2026-08-17T18:30:36Z",
+      "updated": "2026-08-20T03:46:25Z",
       "url": "https://arxiv.org/abs/2608.17034"
     },
     {
@@ -8717,11 +8718,11 @@
         "cs.CL"
       ],
       "id": "2608.17050",
-      "pdf_url": "https://arxiv.org/pdf/2608.17050v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17050v2",
       "primary_category": "cs.CL",
       "published": "2026-08-17T18:54:42Z",
       "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
-      "updated": "2026-08-17T18:54:42Z",
+      "updated": "2026-08-19T07:30:09Z",
       "url": "https://arxiv.org/abs/2608.17050"
     },
     {
@@ -9195,11 +9196,11 @@
         "eess.AS"
       ],
       "id": "2608.17108",
-      "pdf_url": "https://arxiv.org/pdf/2608.17108v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17108v2",
       "primary_category": "cs.SD",
       "published": "2026-08-17T20:36:03Z",
       "title": "A Multiplication-Free Feature Extractor for Signal Classification: Keyword Spotting Case Study",
-      "updated": "2026-08-17T20:36:03Z",
+      "updated": "2026-08-20T12:07:14Z",
       "url": "https://arxiv.org/abs/2608.17108"
     },
     {
@@ -10026,6 +10027,44 @@
       "title": "Pessimistic Meta-Induction and Its Limits: Lessons from Frequentist Statistics and Machine Learning Theory",
       "updated": "2026-08-17T23:51:07Z",
       "url": "https://arxiv.org/abs/2608.17213"
+    },
+    {
+      "abstract": "Looped language models have shown promising results on reasoning benchmarks, yet their potential for agentic tool use remains largely unexplored. We study this question in compositional tool-calling settings, where models must coordinate multiple API calls, maintain intermediate state, and preserve dependencies across tool interactions. We evaluate native and retrofitted looped language models on API-Bank, BFCL, and NESTful, comparing looped and non-looped models trained under matched supervised fine-tuning recipes and varying recurrent depth at inference time. In controlled experiments, recurrent computation generally benefits compositional and dependency-aware tool use, while providing smaller and more model-dependent gains on isolated API invocation. Accuracy on multi-step tool use generally increases with recurrent depth; adaptive inference, however, achieves a more favorable compute-performance trade-off by allocating additional computation only when needed. Our results suggest that looped language models are a promising architecture for agentic systems that require reliable planning, coordination, and execution of compositional tool use workflows.",
+      "authors": [
+        "Andrei Cristian Popescu",
+        "Haitz Sáez de Ocáriz Borde",
+        "Pietro Liò"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "id": "2608.18171",
+      "pdf_url": "https://arxiv.org/pdf/2608.18171v1",
+      "primary_category": "cs.AI",
+      "published": "2026-08-17T18:17:54Z",
+      "title": "Looped Language Models Improve Compositional Tool Calling",
+      "updated": "2026-08-17T18:17:54Z",
+      "url": "https://arxiv.org/abs/2608.18171"
+    },
+    {
+      "abstract": "Customer decline early-warning systems feed account-manager action lists, and every flagged account consumes intervention capacity. In a deployed business-to-business marketplace system, one action-list slot in three went to flags that dissolve under a seasonally aligned label. The standard target in non-contractual churn prediction compares an entity's next k months of activity with its trailing k months. The two windows cover different calendar months, so for seasonal entities the threshold-ratio construction confounds seasonality with decline, and the event rate depends on the label's anchor calendar month. We formalize the mechanism and measure it on three public panels and the production panel (the public arms pre-specified). Of the adjacent-window decay events, 37--69% on the public panels and 28--50% in production have no counterpart under a seasonally aligned definition. Pooling anchors, the standard remedy, balances the training mixture but corrects no individual label. Measured alternatives repair the curve only partially or change the detection horizon. Aligning the baseline to the same k calendar months one year prior -- advice practitioners already state, here formalized, measured, and costed -- flattens the curve at the source. With the classifier held fixed, production holdout ROC-AUC rises from 0.767 to 0.864 for decline (different targets; the gap closes on synthetic ground truth and a production hindsight referee). The served action list shrinks by a third, 119 to 79 accounts. The measured price is extra history, a blind spot to decline-then-stabilization, and a stricter cut under sustained growth.",
+      "authors": [
+        "Md Rezwanul Islam",
+        "Wael Mohammed"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.AP",
+        "stat.ME"
+      ],
+      "id": "2608.18174",
+      "pdf_url": "https://arxiv.org/pdf/2608.18174v1",
+      "primary_category": "stat.AP",
+      "published": "2026-08-17T20:36:21Z",
+      "title": "Seasonal false alarms in customer churn and decline early-warning systems: adjacent-window labels confound seasonality with decline, and a year-over-year correction",
+      "updated": "2026-08-17T20:36:21Z",
+      "url": "https://arxiv.org/abs/2608.18174"
     }
   ]
 }

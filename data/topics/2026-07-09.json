@@ -4036,7 +4036,7 @@
       ],
       "summary": "Cyber-physical security methods address changing normal behavior and dormant malicious logic in connected vehicles and industrial controllers. Adaptive detector selection uses operator feedback, while formal model checking supplies counterexamples and verifies trigger-related properties.",
       "summary_pasted": false,
-      "topic_id": "anomaly-detection-on-structured--ec8b3cb"
+      "topic_id": "fault-detection-and-cyber-physic-025ed95"
     },
     {
       "centroid": {

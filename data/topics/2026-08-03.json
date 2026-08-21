@@ -1850,7 +1850,7 @@
       ],
       "summary": "Forecasting and monitoring methods model latent regimes, direction, changepoints, degradation, telemetry, climate variability, and operational demand. The evaluations prioritize finite-sample attribution, calibrated decisions, event timing, and useful explanations rather than relying on a single aggregate error.",
       "summary_pasted": false,
-      "topic_id": "anomaly-detection-on-structured--ec8b3cb"
+      "topic_id": "fault-detection-and-cyber-physic-025ed95"
     },
     {
       "centroid": {
