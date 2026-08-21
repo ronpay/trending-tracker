@@ -1,0 +1,49 @@
+name: Publish research trends
+
+# The daily update runs where the model that groups papers into topics runs: on a machine
+# with Codex and the `daily-update` skill, which commits the day's data. CI's job is what is
+# left -- rebuilding the site from committed data and deploying it -- so it holds no secret
+# and never writes to `data/`.
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "data/**"
+      - "src/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".python-version"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+      - run: uv sync --locked --no-dev
+      - name: Build the site
+        run: uv run trending-tracker build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
